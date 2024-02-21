@@ -2,6 +2,8 @@ version: "3.0"
 
 services:
   rails:
+    labels:
+      shipyard.route: '/'
     build:
       context: ./docker/ruby
       args:
